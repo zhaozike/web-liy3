@@ -77,8 +77,7 @@ const handler = NextAuth({
   },
   pages: {
     signIn: "/login",
-    signUp: "/register",
-  },
+    },
 });
 
 export { handler as GET, handler as POST };
