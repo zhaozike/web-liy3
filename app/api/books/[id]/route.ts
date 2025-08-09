@@ -45,7 +45,7 @@ export async function PUT(
     }
 
     const body = await request.json();
-    await connectMongo();
+    await connectMongo;
 
     const book = await Book.findById(params.id);
 
@@ -96,7 +96,7 @@ export async function DELETE(
       );
     }
 
-    await connectMongo();
+    await connectMongo;
 
     const book = await Book.findById(params.id);
 
