@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    await connectMongo();
+    await connectMongo;
 
     const { searchParams } = new URL(request.url);
     const page = parseInt(searchParams.get('page') || '1');

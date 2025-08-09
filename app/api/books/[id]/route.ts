@@ -8,7 +8,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   try {
-    await connectMongo();
+    await connectMongo;
 
     const book = await Book.findById(params.id).populate('userId', 'name email');
 
