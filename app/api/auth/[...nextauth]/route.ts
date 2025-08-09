@@ -29,7 +29,7 @@ const handler = NextAuth({
         }
 
         try {
-          await connectMongo();
+          await connectMongo;
           const user = await User.findOne({ email: credentials.email });
 
           if (!user) {
