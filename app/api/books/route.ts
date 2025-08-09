@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    await connectMongo();
+    await connectMongo;
 
     const book = new Book({
       title,
